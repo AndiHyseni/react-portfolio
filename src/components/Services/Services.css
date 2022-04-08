@@ -52,20 +52,20 @@
 
 /*================ Media Queries ( per medium devices )=================*/
 @media screen and (max-width: 1024px) {
-    .services__container {
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-    }
+  .services__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
 
-    .service {
-        height: auto;
-    }
+  .service {
+    height: auto;
   }
-  
-  /*================ Media Queries ( per small devices )=================*/
-  @media screen and (max-width: 600px) {
-    .services__container {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
+}
+
+/*================ Media Queries ( per small devices )=================*/
+@media screen and (max-width: 600px) {
+  .services__container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
+}
