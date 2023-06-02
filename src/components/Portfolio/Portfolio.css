@@ -6,7 +6,7 @@
 
 .portfolio__item {
   background: var(--color-bg-variant);
-  padding: 1.2rem;
+  padding: 1rem;
   border-radius: 2rem;
   border: 1px solid transparent;
   transition: var(--transition);
@@ -21,6 +21,10 @@
   height: 177px;
   border-radius: 1.5rem;
   overflow: hidden;
+}
+
+.projectsImage {
+  height: 100%;
 }
 
 .projectDesc {

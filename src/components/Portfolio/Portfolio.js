@@ -14,7 +14,7 @@ const data = [
     position: "Sole Developer",
     techUsed: "ASP .Net Core, React, MSSQL, Typescript, Javascript",
     decription:
-      "Portal News aims to develop a web application that can provide daily news to people. In this project, the news can be created and changed by the admin, they are also divided into categories and can be filtered based on categories and tags. The admin can see various statistics about the site, such as the number of news, the number of users, the number of views for news, etc.",
+      "Portal News aims to develop a web application that can provide daily news to people. In this project, the news can be created and changed by the admin, they are also divided into categories and can be filtered based on categories and tags. The admin can see various statistics about the site, such as the number of news, the number of users, the number of views for news, number of reactions, who made those reactions, etc.",
     github: "https://github.com/AndiHyseni/NewsPortal-Back-end",
     github2: "https://github.com/AndiHyseni/portal-news",
   },
@@ -62,7 +62,7 @@ const Portfolio = () => {
             return (
               <article key={id} className="portfolio__item">
                 <div className="portfolio__item-image">
-                  <img src={image} alt={title} />
+                  <img className="projectsImage" src={image} alt={title} />
                 </div>
                 <h3>{title}</h3>
                 <h5>{position}</h5>
