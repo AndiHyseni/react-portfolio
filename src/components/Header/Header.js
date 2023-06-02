@@ -17,10 +17,11 @@ const Header = () => {
         <div className="me">
           <img src={ME} alt="me" className="me_2" />
         </div>
-
-        <a href="#contact" className="scroll__down">
-          Scroll Down
-        </a>
+        <div>
+          <a href="#contact" className="scroll__down">
+            Scroll Down
+          </a>
+        </div>
       </div>
     </header>
   );
