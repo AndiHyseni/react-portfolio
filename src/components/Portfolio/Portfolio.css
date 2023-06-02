@@ -18,14 +18,24 @@
 }
 
 .portfolio__item-image {
-  width: 300px;
-  height: auto;
+  height: 177px;
   border-radius: 1.5rem;
   overflow: hidden;
 }
 
+.projectDesc {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: space-between;
+}
+
 .portfolio__item h3 {
-  margin: 1.2rem 0 2rem;
+  margin: 1.2rem 0 0rem;
+}
+
+.portfolio__item h5 {
+  margin: 0rem 0 2rem;
 }
 
 .portfolio__item-cta {
@@ -44,8 +54,8 @@
 
 /*================ Media Queries ( per small devices )=================*/
 @media screen and (max-width: 600px) {
-    .portfolio__container {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
+  .portfolio__container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 }

@@ -30,7 +30,7 @@ const Experience = () => {
               <BsPatchCheckFill className="experience__details-icon" />
               <div>
                 <h4>Javascript</h4>
-                <small className="text-light">Intermediate</small>
+                <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
@@ -43,41 +43,41 @@ const Experience = () => {
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icon" />
               <div>
-                <h4>Vue</h4>
-                <small className="text-light">Basic</small>
+                <h4>Typescript</h4>
+                <small className="text-light">Intermediate</small>
               </div>
             </article>
           </div>
         </div>
         <div className="experience__backend">
-        <h3>Backend Development</h3>
+          <h3>Backend Development</h3>
           <div className="experience__content">
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icon" />
               <div>
-                <h4>Node JS</h4>
-                <small className="text-light">Intermediate</small>
+                <h4>ASP .Net Core Web Api</h4>
+                <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icon" />
               <div>
-                <h4>MySQL</h4>
-                <small className="text-light">Basic</small>
+                <h4>ASP .Net Core MVC</h4>
+                <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icon" />
               <div>
-                <h4>Python</h4>
-                <small className="text-light">Intermediate</small>
+                <h4>Microsoft Sql Server</h4>
+                <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icon" />
               <div>
                 <h4>PHP</h4>
-                <small className="text-light">Intermediate</small>
+                <small className="text-light">Basic</small>
               </div>
             </article>
           </div>

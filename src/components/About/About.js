@@ -21,28 +21,29 @@ const About = () => {
         <div className="about__content">
           <div className="about__cards">
             <article className="about__card">
-              <FaAward className="about__icon" />
+              <FiUsers className="about__icon" />
               <h5>Experience</h5>
-              <small>1+ Year Working</small>
+              <small>1+ Years Working</small>
             </article>
 
             <article className="about__card">
-              <FiUsers className="about__icon" />
-              <h5>Clients</h5>
-              <small>25+ Worldwide</small>
+              <FaAward className="about__icon" />
+              <h5>Bachelor Degree</h5>
+              <small>Computer and Software Engineering</small>
             </article>
 
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
               <h5>Projects</h5>
-              <small>20+ Completed</small>
+              <small>10+ Completed</small>
             </article>
           </div>
 
           <p>
-            Attentive and creative developer with 1 year of experience building
-            reusable components and interface features with React JS framework
-            across websites an mobile applications.
+            Attentive and creative developer with 1+ years of experience
+            building websites. I enjoy building dynamic, creative products from
+            start to finish. Focused on developing intuitive experiences that
+            constantly grow and improve based on user metrics.
           </p>
 
           <a href="#contact" className="btn btn-primary">

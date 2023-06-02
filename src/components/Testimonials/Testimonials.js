@@ -1,43 +1,49 @@
 import React from "react";
 import "./Testimonials.css";
-import I1 from "../../assets/Alma.jpg";
-import I2 from "../../assets/Ardi.jpg";
-import I3 from "../../assets/Endrit.jpg";
+import { BsLinkedin } from "react-icons/bs";
+import I1 from "../../assets/Joni.PNG";
+import I2 from "../../assets/Berati.PNG";
+import I3 from "../../assets/Albioni.PNG";
 
 // import Swiper core and required modules
-import { Navigation, Pagination } from 'swiper';
+import { Navigation, Pagination } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
+import "swiper/css";
+import "swiper/css/pagination";
 
 const data = [
   {
     avatar: I1,
-    name: "Alma Bashiq",
+    name: "Jon Bala",
+    pos: "Frontend Engineer at Trudo",
+    linkedInLink: "https://www.linkedin.com/in/jonbala/",
     review:
-      "Andi is a very fast learner and is a very sincere individual. He explores new technologies and is unafraid of trying our things. Andi on React JS demonstrated good business understanding apart from the programming and user skills.",
+      "Andi is a very fast learner and is a very sincere individual. He explores new technologies and is unafraid of trying new things. Andi as software developer demonstrated good business understanding apart from the programming and user skills.",
   },
   {
     avatar: I2,
-    name: "Ardi Gashi",
+    name: "Berat Latifi",
+    pos: "Software Developer at Comitas",
+    linkedInLink: "https://www.linkedin.com/in/berat-latifi-5b3a89222/",
     review:
       "Andi is an amazing web developer! He has created many dope websites. I have personally worked on a project with him and the experience was amazing as he learned some new things from and even I learned some new things from Andi.",
   },
   {
     avatar: I3,
-    name: "Endrit Lajqi",
+    name: "Albion Ramadani",
+    pos: "Software Developer at Appdec",
+    linkedInLink: "https://www.linkedin.com/in/albion-ramadani-9aa705242/",
     review:
-      "Andi is a very talented, helpful and a kind person. I can approve of his react skills as he has helped me and a lot of people in the community while they face issues, he is an active blogger and has written really useful articles in web development field.",
+      "Andi is a very talented, helpful and a kind person. I can approve of his web development skills as he has helped me and a lot of people in the community while they face issues.",
   },
 ];
 
 const Testimonials = () => {
   return (
     <section id="testimonials">
-      <h5>Review from clients</h5>
       <h2>Testimonials</h2>
 
       <Swiper
@@ -47,15 +53,18 @@ const Testimonials = () => {
         spaceBetween={50}
         slidesPerView={1}
         pagination={{ clickable: true }}
-        
       >
-        {data.map(({ avatar, name, review }, index) => {
+        {data.map(({ avatar, name, pos, linkedInLink, review }, index) => {
           return (
             <SwiperSlide key={index} className="testimonial">
               <div className="client__avatar">
                 <img src={avatar} />
               </div>
               <h5 className="client__name">{name}</h5>
+              <a href={linkedInLink} target="_blank">
+                <BsLinkedin />
+              </a>
+              <h3>{pos}</h3>
               <small className="client__review">{review}</small>
             </SwiperSlide>
           );
